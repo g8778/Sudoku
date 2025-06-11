@@ -2,7 +2,6 @@
 
 A fully-featured, responsive Sudoku game built with HTML, CSS, and JavaScript. This project was created as part of the KSHITIJ Web Development & AI Workshop assignment, implementing a complete Sudoku experience with puzzle generation, validation, and advanced features.
 
-![Sudoku Master Screenshot](https://via.placeholder.com/800x600/2563eb/ffffff?text=Sudoku+Master+Game)
 
 ## ✨ Features
 
@@ -28,28 +27,6 @@ A fully-featured, responsive Sudoku game built with HTML, CSS, and JavaScript. T
 - A modern web browser (Chrome, Firefox, Safari, Edge)
 - No additional software or dependencies required
 
-### Installation
-
-1. **Clone the repository**
-   \`\`\`bash
-   git clone https://github.com/yourusername/sudoku-master.git
-   cd sudoku-master
-   \`\`\`
-
-2. **Open the game**
-   - Simply open `index.html` in your web browser
-   - Or use a local server for development:
-   \`\`\`bash
-   # Using Python
-   python -m http.server 8000
-   
-   # Using Node.js
-   npx serve .
-   \`\`\`
-
-3. **Start playing!**
-   - Navigate to `http://localhost:8000` (if using local server)
-   - Or double-click `index.html` to open directly
 
 ## 🎮 How to Play
 
@@ -72,24 +49,6 @@ A fully-featured, responsive Sudoku game built with HTML, CSS, and JavaScript. T
 - **1-9** - Enter numbers
 - **Delete/Backspace** - Clear cell content
 
-## 🛠️ Technical Implementation
-
-### Architecture
-The game is built using a modular, object-oriented approach with the main `SudokuGame` class handling all game logic.
-
-### Key Algorithms
-- **Puzzle Generation** - Backtracking algorithm ensures valid, complete solutions
-- **Unique Solution Validation** - Guarantees each puzzle has exactly one solution
-- **Real-time Validation** - Efficient checking of Sudoku rules (row, column, 3x3 box)
-
-### File Structure
-\`\`\`
-sudoku-master/
-├── index.html          # Main HTML structure
-├── styles.css          # Complete CSS styling and responsive design
-├── script.js           # Game logic and functionality
-└── README.md          # Project documentation
-\`\`\`
 
 ### Technologies Used
 - **HTML5** - Semantic structure and accessibility
@@ -98,21 +57,6 @@ sudoku-master/
 - **Local Storage API** - Persistent data storage
 - **CSS Grid & Flexbox** - Layout and positioning
 
-## 📋 Assignment Requirements Met
-
-### Core Requirements (160 points)
-- ✅ **Title & Graphics** (35 pts) - Attractive header with game icon
-- ✅ **Sudoku Board** (35 pts) - 9x9 grid with proper validation
-- ✅ **Game Features** (30 pts) - All required controls and interactions
-- ✅ **Design/Implementation** (20 pts) - Responsive, clean code structure
-- ✅ **Puzzle Generation** (40 pts) - Backtracking algorithm with unique solutions
-
-### Bonus Features (55 points)
-- ✅ **Timer & Statistics** (10 pts) - Complete timing and stats system
-- ✅ **Hint System** (10 pts) - Smart hint functionality
-- ✅ **Dark Mode** (10 pts) - Theme switching capability
-- ✅ **Keyboard Navigation** (10 pts) - Arrow key and number input
-- ✅ **Difficulty Levels** (15 pts) - Easy, Medium, Hard modes
 
 ## 🎯 Game Statistics
 
@@ -135,47 +79,7 @@ All statistics are saved locally and persist between sessions.
 - **Medium** - 50 cells removed (balanced)
 - **Hard** - 60 cells removed (challenging)
 
-## 🔧 Development
 
-### Code Structure
-The game follows object-oriented principles with clear separation of concerns:
-
-- **Game Logic** - Puzzle generation, validation, and solving
-- **UI Management** - DOM manipulation and event handling
-- **State Management** - Game state, statistics, and preferences
-- **Utility Functions** - Helper methods for common operations
-
-### Key Methods
-- `generateNewPuzzle()` - Creates new puzzles using backtracking
-- `isValidMove()` - Validates Sudoku rules
-- `hasUniqueSolution()` - Ensures puzzle solvability
-- `checkSolution()` - Validates completed puzzles
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. **Fork the repository**
-2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
-3. **Commit your changes** (`git commit -m 'Add amazing feature'`)
-4. **Push to the branch** (`git push origin feature/amazing-feature`)
-5. **Open a Pull Request**
-
-### Development Guidelines
-- Follow existing code style and conventions
-- Add comments for complex logic
-- Test thoroughly across different browsers
-- Ensure responsive design principles
-
-## 🐛 Known Issues & Future Enhancements
-
-### Potential Improvements
-- [ ] Add sound effects for interactions
-- [ ] Implement puzzle import/export functionality
-- [ ] Add multiplayer competitive mode
-- [ ] Create daily challenge system
-- [ ] Add tutorial mode for beginners
-- [ ] Implement undo/redo functionality
 
 ## 📱 Browser Compatibility
 
@@ -188,25 +92,7 @@ Contributions are welcome! Here's how you can help:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
 
-- **KSHITIJ Web Development & AI Workshop** - For the assignment and learning opportunity
-- **Sudoku Community** - For puzzle generation algorithms and best practices
-- **MDN Web Docs** - For comprehensive web development documentation
-
-## 📞 Contact
-
-**Project Creator**: [Your Name]
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
-
----
-
-**⭐ If you enjoyed this project, please give it a star on GitHub!**
-
-## 🎮 Live Demo
-
-[Play Sudoku Master Online](https://yourusername.github.io/sudoku-master)
 
 ---
 

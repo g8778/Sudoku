@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Master - Challenge Your Mind</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="title-section">
+                <div class="game-icon">🧩</div>
+                <div class="title-text">
+                    <h1>Sudoku Master</h1>
+                    <p class="subtitle">Challenge Your Mind with Logic</p>
+                </div>
+            </div>
+            <div class="theme-toggle">
+                <button id="themeToggle" class="theme-btn">🌙</button>
+            </div>
+        </header>
+
+        <!-- Game Controls -->
+        <div class="controls">
+            <div class="control-group">
+                <select id="difficulty" class="difficulty-select">
+                    <option value="easy">Easy</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <button id="newGame" class="btn btn-primary">New Game</button>
+                <button id="resetGame" class="btn btn-secondary">Reset</button>
+                <button id="checkSolution" class="btn btn-success">Check Solution</button>
+                <button id="getHint" class="btn btn-hint">💡 Hint</button>
+            </div>
+        </div>
+
+        <!-- Game Info -->
+        <div class="game-info">
+            <div class="timer">
+                <span class="label">Time:</span>
+                <span id="timer">00:00</span>
+            </div>
+            <div class="hints-left">
+                <span class="label">Hints:</span>
+                <span id="hintsLeft">3</span>
+            </div>
+            <div class="difficulty-display">
+                <span class="label">Level:</span>
+                <span id="currentDifficulty">Medium</span>
+            </div>
+        </div>
+
+        <!-- Sudoku Board -->
+        <div class="sudoku-container">
+            <div id="sudokuBoard" class="sudoku-board"></div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats-section">
+            <h3>Your Statistics</h3>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-value" id="puzzlesSolved">0</span>
+                    <span class="stat-label">Puzzles Solved</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="bestTime">--:--</span>
+                    <span class="stat-label">Best Time</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="totalTime">00:00</span>
+                    <span class="stat-label">Total Time</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="averageTime">--:--</span>
+                    <span class="stat-label">Average Time</span>
+                </div>
+            </div>
+            <button id="resetStats" class="btn btn-danger">Reset Statistics</button>
+        </div>
+
+        <!-- Messages -->
+        <div id="messageContainer" class="message-container"></div>
+    </div>
+
+    <!-- Reset Confirmation Modal -->
+    <div id="resetModal" class="modal">
+        <div class="modal-content">
+            <h3>Reset Game?</h3>
+            <p>This will clear all your progress. Are you sure?</p>
+            <div class="modal-buttons">
+                <button id="confirmReset" class="btn btn-danger">Yes, Reset</button>
+                <button id="cancelReset" class="btn btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
